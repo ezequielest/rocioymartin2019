@@ -14,9 +14,11 @@ section.examples {
         display: block;
 
         img {
-            max-width: 200px;
-            border-radius: 5px;
+            width: 300px;
+            border-radius: 50%;
             margin-left: 20px;
+            height: 300px;
+            object-fit: cover;
         }
         
         i {
@@ -46,7 +48,7 @@ section.examples {
                 margin-bottom: 0;
             }
             img {
-                height: 60px;
+                height: 300px;
             }
             @media(min-width: 768px) {
                 display: inline-block;
@@ -67,7 +69,7 @@ section.examples {
     @media(max-width: 992px) {
         .badges { 
             img {
-                max-width: 120px;
+                width: 300px;
             }
 
             i {

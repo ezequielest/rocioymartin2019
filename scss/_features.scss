@@ -4,6 +4,15 @@ section.features {
         border-radius: 2px;
     }
 
+    .vertical-img-container {
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: -109px;
+        }
+    } 
+
     .event {
         font-size: 30px;
         margin-top: 80px;

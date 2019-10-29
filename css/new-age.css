@@ -219,8 +219,9 @@ header.masthead-admin {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.45)), to(rgba(255, 0, 0, 0.45))), url("../img/slider-single/slider-single-1.jpg");
-  background: linear-gradient(rgba(58, 231, 194, 0.45), rgba(255, 0, 0, 0.45)), url("../img/slider-single/slider-single-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), 0 30% url("../img/slider-single/slider-single-1.jpg");
+  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), 0 30% url("../img/slider-single/slider-single-1.jpg");
+  background-position: center;
   background-size: cover;
 }
 
@@ -435,8 +436,8 @@ section#tableGift .table-container h3 {
 }
 
 header.masthead {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.45)), to(rgba(255, 0, 0, 0.45)));
-  background: linear-gradient(rgba(58, 231, 194, 0.45), rgba(255, 0, 0, 0.45));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6)));
+  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6));
   height: 100vh;
 }
 
@@ -456,20 +457,20 @@ header.masthead .item {
 }
 
 header.masthead .item.bg-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.45)), to(rgba(255, 0, 0, 0.45))), url("../img/slider-single/slider-single-1.jpg");
-  background: linear-gradient(rgba(58, 231, 194, 0.45), rgba(255, 0, 0, 0.45)), url("../img/slider-single/slider-single-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), 0 30% url("../img/slider-single/slider-single-1.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), 0 30% url("../img/slider-single/slider-single-1.jpeg");
   background-size: cover;
 }
 
 header.masthead .item.bg-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.45)), to(rgba(255, 0, 0, 0.45))), url("../img/slider-single/slider-single-2.jpg");
-  background: linear-gradient(rgba(58, 231, 194, 0.45), rgba(255, 0, 0, 0.45)), url("../img/slider-single/slider-single-2.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), 0 80% url("../img/slider-single/slider-single-2.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), 0 80% url("../img/slider-single/slider-single-2.jpeg");
   background-size: cover;
 }
 
 header.masthead .item.bg-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.45)), to(rgba(255, 0, 0, 0.45))), url("../img/slider-single/slider-single-3.jpg");
-  background: linear-gradient(rgba(58, 231, 194, 0.45), rgba(255, 0, 0, 0.45)), url("../img/slider-single/slider-single-3.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), 0 40% url("../img/slider-single/slider-single-3.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), 0 40% url("../img/slider-single/slider-single-3.jpeg");
   background-size: cover;
 }
 
@@ -676,9 +677,12 @@ section.examples .badges {
 }
 
 section.examples .badges img {
-  max-width: 200px;
-  border-radius: 5px;
+  width: 300px;
+  border-radius: 50%;
   margin-left: 20px;
+  height: 300px;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 section.examples .badges i {
@@ -712,7 +716,7 @@ section.examples .badges .badge-link:last-child {
 }
 
 section.examples .badges .badge-link img {
-  height: 60px;
+  height: 300px;
 }
 
 @media (min-width: 768px) {
@@ -733,7 +737,7 @@ section.examples .badges .badge-link img {
 
 @media (max-width: 992px) {
   section.examples .badges img {
-    max-width: 120px;
+    width: 300px;
   }
   section.examples .badges i {
     top: -10px;
@@ -755,6 +759,17 @@ section.examples .badges .badge-link img {
 
 section.features img {
   border-radius: 2px;
+}
+
+section.features .vertical-img-container {
+  overflow: hidden;
+}
+
+section.features .vertical-img-container img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: -109px;
+  object-position: -109px;
 }
 
 section.features .event {
@@ -1006,8 +1021,9 @@ section.contact ul.list-social li.social-google-plus a:hover {
   padding: 40px 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 105, 105, 0.9)), to(#3ae7c2)), url("../img/gallery/gallery-1.jpg");
-  background: linear-gradient(rgba(253, 105, 105, 0.9), #3ae7c2), url("../img/gallery/gallery-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(253, 105, 105, 0.9)), to(#3ae7c2)), 0 30% url("../img/gallery/gallery-1.jpg");
+  background: linear-gradient(rgba(253, 105, 105, 0.9), #3ae7c2), 0 30% url("../img/gallery/gallery-1.jpg");
+  background-position: center;
   background-size: cover;
 }
 

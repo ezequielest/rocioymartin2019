@@ -15,7 +15,8 @@ require 'mail/src/SMTP.php';
 $response = [];
 if ( !isset($_POST['name']) || 
      !isset($_POST['email']) ||
-     !isset($_POST['message']) ) 
+     !isset($_POST['message']) ||
+     !isset($_POST['personasConfirmadas']) ) 
 {
     die();
     $response['thereIsError'] = true;
@@ -47,7 +48,8 @@ if ( !isset($_POST['name']) ||
         $mail->Subject  = 'Contacto desde INVITE';
         $mail->Body     = "<b></b>Nuevo mensaje enviado desde invite.blur</b> <br><br>
                           Nombre: " . $_POST['name'] . "<br>
-                          Email: " . $_POST['email'] . "<br>";
+                          Email: " . $_POST['email'] . "<br>
+                          Cantidad de personas confirmadas: " . $_POST['personasConfirmadas'] . "<br>";
         
         if (isset($_POST['phone']) && $_POST['phone'] != '') {
             $mail->Body .= "Tel&eacute;fono: " . $_POST['phone'] . "<br>";

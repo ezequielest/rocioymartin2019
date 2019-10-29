@@ -20,8 +20,8 @@
 }
 
 @mixin grandient_trans_img($from, $to, $img){
-    background: linear-gradient($from, $to), url($img);
-
+    background: linear-gradient($from, $to),0 30% url($img);
+    background-position: center;
     background-size: cover;
 }
 

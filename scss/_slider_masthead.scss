@@ -15,15 +15,18 @@ header.masthead {
         color: white;
 
         &.bg-1 {
-            @include grandient_trans_img($gradient_trans_from, $gradient_trans_to, '../img/slider-single/slider-single-1.jpg');
+            background: linear-gradient($gradient_trans_from, $gradient_trans_to),0 30% url('../img/slider-single/slider-single-1.jpeg');
+            background-size: cover;
         }
 
         &.bg-2 {
-            @include grandient_trans_img($gradient_trans_from, $gradient_trans_to, '../img/slider-single/slider-single-2.jpg');
+            background: linear-gradient($gradient_trans_from, $gradient_trans_to),0 80% url('../img/slider-single/slider-single-2.jpeg');
+            background-size: cover;
         }
 
         &.bg-3 {
-            @include grandient_trans_img($gradient_trans_from, $gradient_trans_to, '../img/slider-single/slider-single-3.jpg');
+            background: linear-gradient($gradient_trans_from, $gradient_trans_to),0 40% url('../img/slider-single/slider-single-3.jpeg');
+            background-size: cover;
         }
 
         .header-content {
