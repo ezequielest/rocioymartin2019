@@ -3,11 +3,7 @@
 // Styling for the masthead
 header.masthead {
     position: relative;
-
     width: 100%;
-    padding-top: 150px;
-    padding-bottom: 100px;
-
     color: white;
 
     @include grandient_trans_img($gradient_trans_from, $gradient_trans_to, '../img/slider-single/slider-single-1.jpg');

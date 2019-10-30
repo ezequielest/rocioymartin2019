@@ -70,6 +70,7 @@ section.examples {
         .badges { 
             img {
                 width: 300px;
+                height: 300px;
             }
 
             i {
@@ -81,8 +82,8 @@ section.examples {
     @media(max-width: 390px) {
         .badges { 
             img {
-                width: 100%;
-                max-width: 255px;
+                width: 250px;
+                height: 250px;
             }
         }
     }
