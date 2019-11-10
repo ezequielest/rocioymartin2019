@@ -219,8 +219,8 @@ header.masthead-admin {
   -ms-flex-align: center;
   align-items: center;
   color: white;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), 0 30% url("../img/slider-single/slider-single-1.jpg");
-  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), 0 30% url("../img/slider-single/slider-single-1.jpg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.5)), to(rgba(247, 55, 55, 0.5))), 0 30% url("../img/slider-single/slider-single-1.jpg");
+  background: linear-gradient(rgba(58, 231, 194, 0.5), rgba(247, 55, 55, 0.5)), 0 30% url("../img/slider-single/slider-single-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -238,6 +238,10 @@ header.masthead-admin .header-content h1 {
 header.masthead-admin .header-content h1 .fa-heart {
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
+}
+
+header.masthead-admin .header-content h3 {
+  font-size: 15px;
 }
 
 header.masthead-admin .device-container {
@@ -436,8 +440,8 @@ section#tableGift .table-container h3 {
 }
 
 header.masthead {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6)));
-  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.5)), to(rgba(247, 55, 55, 0.5)));
+  background: linear-gradient(rgba(58, 231, 194, 0.5), rgba(247, 55, 55, 0.5));
   height: 100vh;
 }
 
@@ -456,20 +460,20 @@ header.masthead .item {
 }
 
 header.masthead .item.bg-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), center 30% url("../img/slider-single/slider-single-3.jpeg");
-  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), center 30% url("../img/slider-single/slider-single-3.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.5)), to(rgba(247, 55, 55, 0.5))), center 30% url("../img/slider-single/slider-single-3.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.5), rgba(247, 55, 55, 0.5)), center 30% url("../img/slider-single/slider-single-3.jpeg");
   background-size: cover;
 }
 
 header.masthead .item.bg-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), center 80% url("../img/slider-single/slider-single-2.jpeg");
-  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), center 80% url("../img/slider-single/slider-single-2.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.5)), to(rgba(247, 55, 55, 0.5))), center 80% url("../img/slider-single/slider-single-2.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.5), rgba(247, 55, 55, 0.5)), center 80% url("../img/slider-single/slider-single-2.jpeg");
   background-size: cover;
 }
 
 header.masthead .item.bg-3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.6)), to(rgba(247, 55, 55, 0.6))), center 40% url("../img/slider-single/slider-single-1.jpeg");
-  background: linear-gradient(rgba(58, 231, 194, 0.6), rgba(247, 55, 55, 0.6)), center 40% url("../img/slider-single/slider-single-1.jpeg");
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(58, 231, 194, 0.5)), to(rgba(247, 55, 55, 0.5))), center 40% url("../img/slider-single/slider-single-1.jpeg");
+  background: linear-gradient(rgba(58, 231, 194, 0.5), rgba(247, 55, 55, 0.5)), center 40% url("../img/slider-single/slider-single-1.jpeg");
   background-size: cover;
 }
 
@@ -484,6 +488,10 @@ header.masthead .item .header-content h1 {
 header.masthead .item .header-content h1 .fa-heart {
   -webkit-animation: pulse 2s infinite;
   animation: pulse 2s infinite;
+}
+
+header.masthead .item .header-content h3 {
+  font-size: 15px;
 }
 
 @media (max-width: 340px) {
@@ -712,6 +720,7 @@ section.examples .badges .badge-link:last-child {
 
 section.examples .badges .badge-link img {
   height: 300px;
+  width: 300px;
 }
 
 @media (min-width: 768px) {
@@ -732,8 +741,8 @@ section.examples .badges .badge-link img {
 
 @media (max-width: 992px) {
   section.examples .badges img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
   section.examples .badges i {
     top: -10px;

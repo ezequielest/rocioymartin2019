@@ -49,6 +49,7 @@ section.examples {
             }
             img {
                 height: 300px;
+                width: 300px;
             }
             @media(min-width: 768px) {
                 display: inline-block;
@@ -69,8 +70,8 @@ section.examples {
     @media(max-width: 992px) {
         .badges { 
             img {
-                width: 300px;
-                height: 300px;
+                width: 250px;
+                height: 250px;
             }
 
             i {

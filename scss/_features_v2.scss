@@ -1,0 +1,96 @@
+// Styling for the features section
+section.features-v2 {
+    img {
+        border-radius: 2px;
+    }
+
+    .vertical-img-container {
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+            object-position: -210px;
+        }
+    } 
+
+    .event {
+        font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 40px;
+
+        &.line-space::before {
+            content: '';
+            width: 80%;
+            height: 1px;
+            background:$theme-secondary-light;
+            display: block;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+    }
+
+    .section-heading {
+        margin-bottom: 20px;
+        h2 {
+            margin-top: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    .device-container,
+    .feature-item {
+        max-width: 325px;
+        margin: 0 auto;
+    }
+    .device-container {
+        margin-bottom: 100px;
+        @include scroll;
+
+        .screen {
+            overflow-y: scroll;
+            .img-fluid {
+                max-width: 105%;
+            }
+        }
+        
+        @media(min-width: 992px) {
+            margin-bottom: 0;
+        }
+
+        
+    }
+    .feature-item {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+        }
+        i {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 15px;
+            background: -webkit-linear-gradient(to left, $theme-secondary-dark, $theme-tertiary);
+            background: linear-gradient(to left, $theme-secondary-dark, $theme-tertiary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding: 1px;
+        }
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            li {
+                margin: 20px 0;
+            }
+        }
+    }
+
+    @media (max-width: 992px) {
+        img {
+            display: none;
+        }
+    }
+}
